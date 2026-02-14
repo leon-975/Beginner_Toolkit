@@ -2018,10 +2018,18 @@ Adding rbenv configuration to bash despite using zsh as my terminal
 
 **Troubleshooting:** 
 In terminal, type "sed -i '/rbenv/d' ~/.bashrc" This removes the incorrect rbenv lines from .bashrc
-Type the following in terminal sequentially
-	echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
-	echo 'eval "$(rbenv init - zsh)"' >> ~/.zshrc
-	source ~/.zshrc
+
+
+
+
+Type the following in terminal sequentially:
+	1.echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
+	
+	
+	2. echo 'eval "$(rbenv init - zsh)"' >> ~/.zshrc
+	
+	
+	3.source ~/.zshrc
 ---
 
 ## ❓ FAQ (Frequently Asked Questions)
