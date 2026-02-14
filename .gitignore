@@ -1,0 +1,21 @@
+# Ignore Mac system files
+.DS_Store
+
+# Ignore Windows system files
+Thumbs.db
+
+# Ignore editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore Ruby/Bundler files (if you add gems later)
+.bundle/
+vendor/
+
+# Ignore test coverage reports
+coverage/
+
+# Ignore log files
+*.log
