@@ -2009,27 +2009,8 @@ Link to template - "https://training.moringaschool.com/courses/8/pages/using-ai-
 
 Prompt link - https://training.moringaschool.com/courses/8/pages/exercise-readme-and-user-guide-documentation?module_item_id=230 prompt 1
 
-### Example Entry Format:
 
-**Date:** February 14, 2026  
-**Prompt/Question:** "What are Ruby blocks and how do they work?"  
-**What I Learned:** Blocks are chunks of code passed to methods. They can use `{...}` for single-line or `do...end` for multi-line. Block parameters like `|n|` act like method parameters but for the block.  
-**Code I Tried:**
-```ruby
-[1, 2, 3].each { |n| puts n * 2 }
-# Output: 2, 4, 6
 ```
-**Challenges:** Initially confused about when to use `{}` vs `do...end`. Learned that `{}` is for single lines and `do...end` is for multiple lines.  
-**Next Steps:** Practice with more complex blocks and explore procs and lambdas.
-
----
-
-**Date:** [Your Date]  
-**Prompt/Question:** [Your question or topic]  
-**What I Learned:** [Summary of what you learned]  
-**Code I Tried:**
-```ruby
-# Your code here
 ```
 **Challenges:**
 Adding rbenv configuration to bash despite using zsh as my terminal 
