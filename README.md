@@ -1147,7 +1147,146 @@ dev2 = Developer.new("Bob")
 
 ---
 
+### 7. `example.rb` - Complete Interactive Program
 
+**Difficulty:** ⭐⭐⭐ Intermediate  
+**Concepts:** User Input, Classes, Objects, Methods, Complete Program Flow
+
+#### Code:
+```ruby
+class Greeter
+  def initialize(name)
+    @name = name
+  end
+  
+  def greet
+    "Hello, #{@name}! Welcome to Ruby!"
+  end
+  
+  def farewell
+    "Goodbye, #{@name}! Happy coding!"
+  end
+end
+
+# Get user input
+print "What's your name? "
+name = gets.chomp
+# gets reads input from the user
+# chomp removes newline from entry
+
+# Create greeter and use it
+greeter = Greeter.new(name)
+puts greeter.greet
+puts greeter.farewell
+```
+
+#### Line-by-Line Breakdown:
+
+**Lines 1-13:** Class Definition (Similar to `classes.rb`)
+```ruby
+class Greeter
+  def initialize(name)
+    @name = name
+  end
+  
+  def greet
+    "Hello, #{@name}! Welcome to Ruby!"
+  end
+  
+  def farewell
+    "Goodbye, #{@name}! Happy coding!"
+  end
+end
+```
+
+- Defines a `Greeter` class with a constructor and two methods
+- `initialize` sets the `@name` instance variable
+- `greet` returns a welcome message
+- `farewell` returns a goodbye message
+- Both methods use string interpolation with `@name`
+
+**Line 16:** `print "What's your name? "`
+- `print` outputs text **without** a newline
+- Keeps the cursor on the same line
+- Difference:
+  - `puts` = "put string" + newline
+  - `print` = just the string, no newline
+- Creates a prompt for user input
+
+**Line 17:** `name = gets.chomp`
+- `gets` = **"get string"** from user input
+- Pauses program and waits for user to type and press Enter
+- Returns everything the user typed, **including the newline character**
+- `.chomp` = removes the trailing newline character
+- Example:
+  - User types: `Alice` + Enter
+  - `gets` returns: `"Alice\n"` (with newline)
+  - `.chomp` returns: `"Alice"` (newline removed)
+
+**Why `.chomp` is important:**
+```ruby
+# Without chomp:
+name = gets          # User enters "Alice"
+puts "Hello, #{name}!"
+# Output:
+# Hello, Alice
+# !                   <- newline causes this!
+
+# With chomp:
+name = gets.chomp    # User enters "Alice"
+puts "Hello, #{name}!"
+# Output: Hello, Alice!  <- correct!
+```
+
+**Line 22:** `greeter = Greeter.new(name)`
+- Creates a new `Greeter` object
+- Passes the user's input (`name`) to the constructor
+- The `@name` instance variable is set to the user's name
+- Object is stored in the `greeter` variable
+
+**Line 23:** `puts greeter.greet`
+- Calls the `greet` method on the `greeter` object
+- Returns `"Hello, [user's name]! Welcome to Ruby!"`
+- `puts` prints it to the console
+
+**Line 24:** `puts greeter.farewell`
+- Calls the `farewell` method on the `greeter` object
+- Returns `"Goodbye, [user's name]! Happy coding!"`
+- `puts` prints it to the console
+
+#### Expected Output:
+
+**Example run:**
+```
+What's your name? Alice
+Hello, Alice! Welcome to Ruby!
+Goodbye, Alice! Happy coding!
+```
+
+**Another example:**
+```
+What's your name? Bob
+Hello, Bob! Welcome to Ruby!
+Goodbye, Bob! Happy coding!
+```
+
+#### Program Flow Diagram:
+
+```
+1. Program starts
+2. Class Greeter is defined (blueprint created)
+3. print displays "What's your name? "
+4. User types their name and presses Enter
+5. gets captures the input
+6. chomp removes the newline
+7. name variable stores the cleaned input
+8. Greeter.new(name) creates an object with @name set
+9. greeter.greet is called, returns greeting string
+10. puts prints the greeting
+11. greeter.farewell is called, returns farewell string
+12. puts prints the farewell
+13. Program ends
+```
 
 #### User Input Methods:
 
