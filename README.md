@@ -1927,6 +1927,11 @@ Link to template - "https://training.moringaschool.com/courses/8/pages/using-ai-
 Prompt link - https://training.moringaschool.com/courses/8/pages/exercise-readme-and-user-guide-documentation?module_item_id=230 prompt 1
 
 
+
+
+Prompt link - https://training.moringaschool.com/courses/8/pages/exercise-readme-and-user-guide-documentation?module_item_id=230 prompt 2
+
+
 ```
 ```
 **Challenges:**
